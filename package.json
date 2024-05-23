@@ -1,11 +1,10 @@
 {
-  "name": "com.famoz.famoz.basepackage",
+  "name": "com.famoz.basepackage",
   "version": "1.0.0",
   "displayName": "FAMOZ_Package_Base",
-  "unity": "2019.3",
+  "unity": "2021.3",
   "keywords": [
-    "famoz",
-    "common"
+    "famoz"
   ],
   "author": {
     "name": "FAMOZ Develop Team",
