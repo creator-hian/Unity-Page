@@ -1,15 +1,20 @@
 {
-  "name": "com.famoz.basepackage",
+  "name": "com.famoz.future-ocean.page",
   "version": "1.0.0",
-  "displayName": "FAMOZ_Package_Base",
-  "unity": "2021.3",
+  "displayName": "Famoz Future Ocean Page",
+  "unity": "6000.0",
   "keywords": [
-    "famoz"
+    "Famoz",
+    "Future Ocean",
+    "Page"
   ],
   "author": {
-    "name": "FAMOZ Develop Team",
+    "name": "FAMOZ",
     "email": "shahian12@famoz.co.kr",
     "url": "https://www.famoz.co.kr/"
   },
-  "description": "\uc720\ub2c8\ud2f0 \uac1c\ubc1c\ud658\uacbd\uc5d0\uc11c\uc758 \uc0ac\uc6a9\uc790 \ucee4\uc2a4\ud140 \ud328\ud0a4\uc9c0\ub97c \ub9cc\ub4e4\uae30 \uc704\ud55c \ubca0\uc774\uc2a4 \ud615\ud0dc\uc785\ub2c8\ub2e4."
+  "description": "미래해양과학관의 페이지 관련 기능을 위한 패키지",
+  "dependencies": {
+    "com.famoz.future-ocean.logging": "1.0.0"
+  }
 }
