@@ -1,6 +1,6 @@
 {
   "name": "com.famoz.future-ocean.page",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Famoz Future Ocean Page",
   "unity": "6000.0",
   "keywords": [
@@ -15,6 +15,6 @@
   },
   "description": "미래해양과학관의 페이지 관련 기능을 위한 패키지",
   "dependencies": {
-    "com.famoz.future-ocean.logging": "1.0.0"
+    "com.famoz.future-ocean.logging": "1.0.1"
   }
 }

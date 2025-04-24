@@ -1,7 +1,9 @@
 {
     "name": "FAMOZ.FutureOcean.Page",
     "rootNamespace": "FAMOZ.FutureOcean.Page",
-    "references": [],
+    "references": [
+        "GUID:5566548039f7c9c478aebe3f2b1352fa"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -5,6 +5,13 @@
 형식은 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)를 기반으로 하며,
 이 프로젝트는 [Semantic Versioning](https://semver.org/spec/v2.0.0.html)을 준수합니다.
 
+## [1.0.1] - 2025-04-24
+
+### 변경
+
+- Logging 패키지 의존성을 1.0.0에서 1.0.1로 업데이트
+- Memory Bank 문서화 시스템 구현
+
 ## [1.0.0] - 2025-04-22
 
 ### 추가
@@ -20,5 +27,5 @@
 
 ### 종속성
 
-- com.famoz.future-ocean.logging (1.0.0)
+- com.famoz.future-ocean.logging (1.0.1)
 - VContainer (Optional, VContainer Extension 사용 시 필요)
