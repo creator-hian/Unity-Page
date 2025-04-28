@@ -14,7 +14,7 @@ namespace Page
         private GUIStyle headerStyle;
         private GUIStyle descriptionStyle;
         private Vector2 scrollPosition;
-        
+
         [MenuItem(MenuPath + "Settings", false, 0)]
         private static void ShowWindow()
         {
@@ -28,7 +28,7 @@ namespace Page
             isDebugEnabled = Common.Editor.ScriptingDefineSymbolUtility.HasScriptingDefineSymbol(
                 Const.LogSymbol
             );
-            
+
             headerStyle = new GUIStyle();
             descriptionStyle = new GUIStyle();
         }
@@ -40,23 +40,25 @@ namespace Page
             {
                 InitializeStyles();
             }
-            
+
             scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
 
             // 헤더 섹션
             GUILayout.Space(10);
             EditorGUILayout.LabelField("Page Package Debug Settings", headerStyle);
             GUILayout.Space(5);
-            
+
             // 구분선
             EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
             GUILayout.Space(10);
-            
+
             // 설명
-            EditorGUILayout.LabelField("디버그 로그 설정을 통해 Page 패키지의 내부 작동에 대한 상세 로그를 활성화하거나 비활성화할 수 있습니다.",
-                descriptionStyle);
+            EditorGUILayout.LabelField(
+                "디버그 로그 설정을 통해 Page 패키지의 내부 작동에 대한 상세 로그를 활성화하거나 비활성화할 수 있습니다.",
+                descriptionStyle
+            );
             GUILayout.Space(15);
-            
+
             // 디버그 로그 토글
             bool newValue = EditorGUILayout.Toggle("디버그 로그 활성화", isDebugEnabled);
             if (newValue != isDebugEnabled)
@@ -67,11 +69,14 @@ namespace Page
                     isDebugEnabled
                 );
             }
-            
+
             // 현재 상태 표시
             GUILayout.Space(10);
-            EditorGUILayout.LabelField("현재 상태:", isDebugEnabled ? "활성화됨 ✓" : "비활성화됨 ✗");
-            
+            EditorGUILayout.LabelField(
+                "현재 상태:",
+                isDebugEnabled ? "활성화됨 ✓" : "비활성화됨 ✗"
+            );
+
             // 영향 받는 디버그 기능 목록
             GUILayout.Space(20);
             EditorGUILayout.LabelField("영향 받는 기능:", EditorStyles.boldLabel);
@@ -80,26 +85,27 @@ namespace Page
             EditorGUILayout.LabelField("• 페이지 생명주기 이벤트 로깅");
             EditorGUILayout.LabelField("• 페이지 컨트롤러 작업 로깅");
             EditorGUILayout.LabelField("• 애니메이션 상태 로깅");
-            
+
             // 스크립트 재컴파일 버튼
             GUILayout.Space(30);
             if (GUILayout.Button("스크립트 재컴파일"))
             {
                 AssetDatabase.Refresh();
             }
-            
+
             EditorGUILayout.EndScrollView();
         }
-        
+
         private void InitializeStyles()
         {
             headerStyle = new GUIStyle(EditorStyles.largeLabel);
             headerStyle.fontSize = 16;
             headerStyle.fontStyle = FontStyle.Bold;
             headerStyle.alignment = TextAnchor.MiddleCenter;
-            headerStyle.normal.textColor = EditorGUIUtility.isProSkin ?
-                new Color(0.9f, 0.9f, 0.9f) : new Color(0.2f, 0.2f, 0.2f);
-                
+            headerStyle.normal.textColor = EditorGUIUtility.isProSkin
+                ? new Color(0.9f, 0.9f, 0.9f)
+                : new Color(0.2f, 0.2f, 0.2f);
+
             descriptionStyle = new GUIStyle(EditorStyles.label);
             descriptionStyle.wordWrap = true;
             descriptionStyle.richText = true;
