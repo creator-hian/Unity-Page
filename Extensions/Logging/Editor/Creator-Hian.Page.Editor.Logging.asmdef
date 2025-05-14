@@ -1,8 +1,10 @@
 {
-    "name": "Creator-Hian.Page.Editor",
+    "name": "Creator-Hian.Page.Editor.Logging",
     "rootNamespace": "Creator-Hian.Page",
     "references": [
-        "GUID:1ebf0ff8d3ae37c47bcecdc10ec2c9b9"
+        "Creator-Hian.Page",
+        "Creator-Hian.Logging",
+        "Creator-Hian.Logging.Editor"
     ],
     "includePlatforms": [
         "Editor"
@@ -12,7 +14,9 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "ENABLE_CREATOR_HIAN_LOGGING"
+    ],
     "versionDefines": [
         {
             "name": "com.creator-hian.unity.logging",

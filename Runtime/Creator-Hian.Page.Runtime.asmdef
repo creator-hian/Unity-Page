@@ -1,17 +1,23 @@
 {
-  "name": "Creator-Hian.Page.Runtime",
-  "rootNamespace": "Creator-Hian.Page",
-  "references": [
-    "GUID:1ebf0ff8d3ae37c47bcecdc10ec2c9b9",
-    "GUID:5566548039f7c9c478aebe3f2b1352fa"
-  ],
-  "includePlatforms": [],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
-  "versionDefines": [],
-  "noEngineReferences": false
+    "name": "Creator-Hian.Page.Runtime",
+    "rootNamespace": "Creator-Hian.Page",
+    "references": [
+        "GUID:1ebf0ff8d3ae37c47bcecdc10ec2c9b9",
+        "GUID:5566548039f7c9c478aebe3f2b1352fa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.creator-hian.unity.logging",
+            "expression": "",
+            "define": "ENABLE_CREATOR_HIAN_LOGGING"
+        }
+    ],
+    "noEngineReferences": false
 }

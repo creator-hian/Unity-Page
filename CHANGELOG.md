@@ -13,6 +13,9 @@ Unity Page 패키지의 모든 주요 변경 사항이 이 파일에 기록됩�
 - 버전 업데이트 (1.0.0 → 1.1.0)
 - 종속성 패키지 버전 업데이트 (1.0.0 → 1.0.1)
 - 종속성 패키지 이름 변경 (`com.famoz.future-ocean.logging` → `com.creator-hian.unity.logging`)
+- 로깅 시스템을 조건부 활성화 기능 추가 (Logging 패키지가 존재할 때만 확장 기능 활성화)
+- `StandaloneDefineSymbolManager` 추가 - Logging 패키지 없이도 LogSymbol 관리 가능
+- 조건부 컴파일 적용 - Logging 패키지 존재 여부에 따라 적절한 관리자 활성화
 
 ## [1.0.0] - 2025-04-22
 
@@ -29,5 +32,5 @@ Unity Page 패키지의 모든 주요 변경 사항이 이 파일에 기록됩�
 
 ### 종속성
 
-- com.creator-hian.logging (1.0.1)
+- com.famoz.future-ocean.logging (1.0.1)
 - VContainer (Optional, VContainer Extension 사용 시 필요)
