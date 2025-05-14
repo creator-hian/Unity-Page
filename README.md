@@ -1,4 +1,4 @@
-# FAMOZ Page 시스템
+# Unity Page 시스템
 
 > **주의사항**: 본 문서는 LLM(대규모 언어 모델)을 기반으로 작성되었으며, 실제 구현과 다소 차이가 있을 수 있습니다. 정확한 사용법은 원본 코드를 참조하시기 바랍니다.
 
@@ -8,11 +8,11 @@
 
 ## 원작성자
 
-- FAMOZ 시스템 개발팀
+- @creator-hian
 
 ## 기여자
 
-- 시스템 개발팀 구성원
+- @creator-hian
 
 # 시스템 요구사항
 
@@ -189,7 +189,7 @@ Page/
 
 ## 종속 모듈
 
-- com.famoz.future-ocean.logging (1.0.0) - 로깅 시스템 제공
+- com.creator-hian.logging (1.0.0) - 로깅 시스템 제공
 - VContainer (선택적, Extensions/VContainer 사용 시 필요)
 
 # 4. 변경 로그

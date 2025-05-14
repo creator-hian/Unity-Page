@@ -1,20 +1,19 @@
 {
-  "name": "com.famoz.future-ocean.page",
-  "version": "1.0.0",
-  "displayName": "Famoz Future Ocean Page",
+  "name": "com.creator-hian.unity.page",
+  "version": "1.1.0",
+  "displayName": "Unity Page",
   "unity": "6000.0",
   "keywords": [
-    "Famoz",
-    "Future Ocean",
+    "Creator Hian",
     "Page"
   ],
   "author": {
-    "name": "FAMOZ",
-    "email": "shahian12@famoz.co.kr",
-    "url": "https://www.famoz.co.kr/"
+    "name": "Creator Hian",
+    "email": "creator-hian@gmail.com",
+    "url": "https://github.com/creator-hian"
   },
-  "description": "미래해양과학관의 페이지 관련 기능을 위한 패키지",
+  "description": "Creator Hian의 페이지 관련 기능을 위한 패키지",
   "dependencies": {
-    "com.famoz.future-ocean.logging": "1.0.0"
+    "com.creator-hian.unity.logging": "1.0.1"
   }
 }
